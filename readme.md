@@ -44,8 +44,8 @@ jobs:
         uses: actions/setup-node@v1.4.1
         with:
           node-version: "13.9.0"
-      - name: Jaid/action-sync-node-meta
-        uses: jaid/action-sync-node-meta@v1.4.0
+      - name: action-sync-node-meta
+        uses: brendt-napp/action-sync-node-meta@master
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -73,8 +73,8 @@ jobs:
         uses: actions/setup-node@v1.4.1
         with:
           node-version: "13.9.0"
-      - name: Jaid/action-sync-node-meta
-        uses: jaid/action-sync-node-meta@v1.4.0
+      - name: action-sync-node-meta
+        uses: brendt-napp/action-sync-node-meta@master
         with:
           direction: overwrite-github
           githubToken: ${{ secrets.customGithubToken }}
@@ -169,7 +169,7 @@ jobs:
 
 Setting up:
 ```bash
-git clone git@github.com:jaid/action-sync-node-meta.git
+git clone https://github.com/brendt-napp/action-sync-node-meta.git
 cd action-sync-node-meta
 npm install
 ```
