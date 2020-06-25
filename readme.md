@@ -122,6 +122,12 @@ jobs:
 <td>The syncing direction, can be "overwrite-file" or "overwrite-github". If "overwrite-file", the file package.json will be edited in a pull request according to the GitHub repository info. If "overwrite-github", the GitHub repository info will be changed according to the content of the package.json file.</td>
 </tr>
 <tr>
+<td>path</td>
+<td></td>
+<td>package.json</td>
+<td>The path of the package.json file</td>
+</tr>
+<tr>
 <td>removeBranch</td>
 <td></td>
 <td>true</td>
